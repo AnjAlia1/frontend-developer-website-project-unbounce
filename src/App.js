@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+// import "font-awesome/css/font-awesome.min.css";
+import { Link, Route, Routes } from "react-router-dom";
+
+import "./App.css";
+import Nav from "./nav";
+import Main from "./main";
+import Content from "./contentPage";
+import Integrate from "./integrationPage";
+import Feedback from "./FeedbackSection";
+import Services from "./servicesPage";
+import Support from "./supportPage";
+import Trail from "./trialPage";
+import Footer from "./footer";
+import Login from "./login";
+import { FaTwitterCircle } from "react-icons/fa";
+import Newpage from "./newPage";
 
 function App() {
+
+  function HomeLayout() {
+    return (
+      <>
+        <Nav />
+        <Main></Main>
+        <Content></Content>
+        <Integrate />
+        <Feedback></Feedback>
+        <Services></Services>
+        <Support></Support>
+        <Trail />
+        <Footer />
+        
+      </>
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <Routes>
+         <Route path="/" element={<HomeLayout/>}/>
+        <Route path="/login" element={<Login/>}/>
+        {/* <Route path="/newpage" element={<Newpage/>}/> */}
+      </Routes>
     </div>
   );
 }
