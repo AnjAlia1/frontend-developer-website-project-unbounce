@@ -8,17 +8,20 @@ const Main = () => {
           platform, you can build higher-converting campaigns that’ll help you
           scale your marketing without limits.
         </p>
-        <div className="start-btns">
-          <button className="start-builiding-btn">
-            Start building for free
-          </button>
-          <button className="request-demo-btn">Request a demo</button>
-        </div>
-  
+        <button className="start-builiding-btn">
+          Start building for free
+        </button>
+        <button className="request-demo-btn">Request a demo</button>
       </div>
-      
-        <img className="imgblock" src="https://unbounce.com/photos/New-HP-banner-2023_2X_Desktop-2-1.png"/>
-        
+
+      <div>
+        <img className="imgblock" src="https://unbounce.com/photos/New-HP-banner-2023_2X_Desktop-2-1.png" />
+      </div>
+
+
+
+
+
     </div>
   );
 };

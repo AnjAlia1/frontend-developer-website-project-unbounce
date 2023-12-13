@@ -10,7 +10,7 @@ const Content = () => {
       </p>
       <div className="all-pages">
         <div className="page">
-        <img src="https://unbounce.com/photos/Copy-Paste.png"  alt="" className="icon lazyloaded" width="42px" height="42px"/>
+          <img src="https://unbounce.com/photos/Copy-Paste.png" alt="" className="icon lazyloaded" width="42px" height="42px" />
 
           <h3>Create your pages</h3>
           <p>
@@ -21,7 +21,7 @@ const Content = () => {
           <span>Create your pages</span>
         </div>
         <div className="page">
-        <img src="https://unbounce.com/photos/Smart-Copy-Icon.png" alt="" className="icon lazyloaded" width="42px" height="42px"/>
+          <img src="https://unbounce.com/photos/Smart-Copy-Icon.png" alt="" className="icon lazyloaded" width="42px" height="42px" />
           <h3>… And write your copy</h3>
           <p>
             Writer’s block is so… Uh, what’s the word? With AI copywriting
@@ -30,7 +30,7 @@ const Content = () => {
           </p>
         </div>
         <div className="page">
-        <img src="https://unbounce.com/photos/Smart-Traffic-Icon.png" alt="" className="icon lazyloaded" width="42px" height="42px"/>
+          <img src="https://unbounce.com/photos/Smart-Traffic-Icon.png" alt="" className="icon lazyloaded" width="42px" height="42px" />
           <h3>… And optimize your traffic</h3>
           <p>
             Improve your results with the click of a button. Unbounce routes
@@ -45,12 +45,14 @@ const Content = () => {
       <iframe
         title="Wistia Video"
         src="https://fast.wistia.net/embed/iframe/ngi8tlre0p"
-        width="640"
-        height="360"
+        // width="640"
+        width="40%"
+        // height="360"
+        height="70%"
         frameBorder="0"
-        allowFullScreen
+      // allowFullScreen
       ></iframe>
-    {/* </div> */}
+      {/* </div> */}
     </div>
   );
 };

@@ -1,5 +1,11 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  border:1px solid blue;
+}
 .content-section {
   padding: 5% 8%;
+  border: 5px solid darkgreen;
 }
 
 .content-section>p {
@@ -16,6 +22,11 @@
   gap: 1.5rem;
 }
 
+/* .overlay-items {
+  background-color: gray;
+  display: flex;
+} */
+
 .page {
   display: flex;
   flex-direction: column;
@@ -28,26 +39,46 @@ blockquote {
 }
 
 .marketing-section {
-  /* padding: 2% 8%; */
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .marketing-team {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
+  /* margin: auto; */
+  padding: 0% 1%;
+  height: 36rem;
+
   border: 1px double black;
   text-align: left;
-  padding: -10% 4%;
+  justify-content: center;
+}
+
+.marketing-section h2 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.786);
+  font-weight: 410;
 }
 
 .feedback-section {
-  padding: 2% 8%;
-  border: 1px dashed blue;
+  padding: 1.5% 3%;
+  text-align: center;
 }
 
-.logo-section img {
-  width: 6rem;
-  padding: 0.6rem;
+.feedback-section h1 {
+  font-size: 3.5rem;
+  font-weight: 410;
+  text-align: center;
+  padding: 1% 4%;
+}
+
+.feedback-section>p {
+  width: 60%;
+  margin: auto;
 }
 
 /* Nav-Bar-Section*/
@@ -68,6 +99,7 @@ blockquote {
 .nav-section {
   position: sticky;
   top: 0px;
+  width: 100%;
 }
 
 .nav-menu-bar {
@@ -77,18 +109,6 @@ blockquote {
   justify-content: space-around;
 
 }
-
-@media (max-width: 350px) and (min-width:330px) {
-  .nav-section {
-    background-color: pink;
-    width: 80%;
-    font-size: small;
-    border: 1px dashed brown;
-  }
-
-}
-
-
 
 /* Nav-Bar-Section*/
 .search {
@@ -125,9 +145,9 @@ blockquote {
   border: none;
 }
 
-BiSearchAlt2 {
-  color: white;
-  border: 1px solid blue;
+.iconStyle {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 body,
@@ -137,22 +157,33 @@ html {
 }
 
 .main-div {
-  /* height: 75%; */
-  /* background-image: url('https://unbounce.com/photos/New-HP-banner-2023_2X_Desktop-2-1.png'); */
-  /* background-image:url('https://unbounce.com/photos/New-HP-banner-2023_2X_Desktop-1.png'); */
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
-  /* background-position: 150px 20px; */
   background-color: #282c34;
   justify-content: first baseline;
   border: 0.1px solid transparent;
-  padding: 05%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   box-sizing: border-box;
-  /* position: sticky; */
-  /*why*/
+  width: 100vw;
+  img{
+    width: 50vw;
+   
+  }
+}
+.main-content{
+  width:40vw;
+  p{
+   font-family: sans-serif;
+   font-size: small;
+   font-weight: 200;
+
+    
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 300;
+    
+  }
 }
 
 /* .imgblock {
@@ -265,12 +296,24 @@ html {
   border: 2px solid blue;
   width: 80%;
 }
-
+.iframe-div{
+  border:2px solid darkorange;
+}
 .integrate-section {
-  margin-top: 78vh;
+  margin-top: 310px;
   background-color: rgba(245, 245, 220, 0.458);
-  padding: 2% 8%;
-  font-size: 1.5rem;
+  padding: 1% 4%;
+}
+
+.logo-section img {
+  width: 7rem;
+  padding:1%
+  /* padding: 0.8rem 0.0rem; */
+}
+
+.integrate-section h1 {
+  font-size: 3.5rem;
+  font-weight: 410;
 }
 
 .marketing-section {
@@ -324,6 +367,7 @@ footer {
 
 section {
   display: flex;
+  border:5px double silver;
 }
 
 .services-option {
@@ -333,10 +377,21 @@ section {
 
 .services-page-section {
   padding: 2% 8%;
+  text-align: center;
+}
+
+.services-page-section>h1 {
+  font-size: 3.5rem;
+  font-weight: 410;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.services-page-section img {
+  width: 10%;
+
 }
 
 .services-amplify-section {
-  border: 4px dashed green;
   text-align: left;
   width: 40%;
   margin-left: 10%;
@@ -356,32 +411,64 @@ iframe {
 .link:before {
   content: rarr;
 }
+.overlay-left{
+  border:2px dashed darkblue;
+  top:0%;
+  margin-top: 0;
+  padding-top: 0;
 
+}
 
 /* Adjust the styles for the overlay */
 .overlay {
   position: fixed;
+  /* position: absolute; */
   top: 20%;
   left: 30;
   width: 70%;
   height: 80%;
-  background-color: rgba(255, 255, 255);
+  background-color: snow;
+  display: flex;
 
+font-size: small;
+line-height: 3;
   /* display: none; */
   color: black;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
+  flex-direction: row;
+  align-items: baseline;
+}
+.product-pages h4 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.overlay ul {
+.overlay li{
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 1%;
 
 }
+.overlay p{
+  margin: 0;
+  padding: 0;
+}
+.overlay-items{
+background-color: rgba(245, 245, 220, 0.412);
+height: 100%;
+width: 40%;
+align-items: left;
+}
+.overlay-items img{
+  height: 40%;
+}
 
+.overlay-items h1{
+  font-size:large;
+}
 .ConciergePlans {
   background-color: black;
   color: white;
@@ -565,4 +652,282 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 665px) {
+  
+  .main-div{
+    width: 100vw;
+    font-size: smaller;
+    /* position: relative; */
+    /* top:10; */
+    display: flex;
+    flex-direction: column;
+    h1{
+      width:90vw;
+      font-size:1.5rem;
+      order:0;
+      line-height: 1.5;
+    }
+    p{
+      width:90vw;
+      font-size:1rem;
+       order:2; 
+    }
+    img{
+       order: 0;
+      display: flex;
+      width: 80vw;
+      height: 85%;
+    }
+    button{
+
+      order: 3;
+
+    }
+  }
+
+
+.nav-section{
+  display: none;
+}
+  .content-section {
+    font-size: large;
+    border:2px solid orange;
+    h1{
+      font-size: large;
+    }
+  p {
+    width: 80%;
+    text-align: left;
+    font-size: 1rem;
+    
+  }
+}
+  .all-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* .overlay-items {
+    background-color: gray;
+    display: flex;
+  } */
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .integrate-section {
+    border:2px solid blue;
+    background-color: rgba(245, 245, 220, 0.458);
+    /* padding: 1% 4%; */
+    h1{
+      font-size: 1.5rem;
+      font-weight: 410;
+      line-height: 1.5;
+    }
+  }
+  .iframe-div{
+    border:3px solid red;
+  }
+  
+  .logo-section img {
+    width: 3rem;
+    padding: 3%;
+  }
+  
+  .feedback-section {
+    padding: 1.5% 3%;
+  }
+  
+  .feedback-section h1 {
+    font-size: 1.5rem;
+    font-weight:600;
+    line-height: 1.2;
+  }
+  
+  .feedback-section>p {
+    font-size: 1rem;
+  }
+  
+  .marketing-section {
+    width: 90vw;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .marketing-team {
+    /* display: flex;
+    flex-direction: row; */
+    border:6px solid red;
+    width: 90vw;
+    /* margin: auto; */
+  
+    border: 1px double black;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  .marketing-section h2 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.786);
+    font-weight: 410;
+  }
+
+
+
+  .services-option {
+    display: flex;
+    flex-direction: column;
+    iframe {
+      width: 100%;
+    }
+  }
+  
+  .services-page-section {
+   width: 100vw;
+    text-align: center;
+    section{
+      border:3px solid aqua;
+      display: flex;
+      flex-direction: column;
+      iframe{
+        order: 1;
+        height: 40vh;
+        width: 90vw;
+      }
+
+    }
+    /* h1{
+      font-size: 2rem;
+      font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    } */
+    /* p{
+      font-size: 1rem;
+    } */
+  }
+
+  
+  .services-page-section img {
+    width: 20%;
+    border: 4px solid pink;
+  
+  }
+  
+  .services-amplify-section {
+    text-align: left;
+    width: 90%;
+    
+  }
+  
+  .services-marketing-option {
+    text-align: left;
+    width: 90%; 
+  }
+
+  .ConciergePlans {
+    background-color: black;
+    color: white;
+    img {
+      height: 50vh;
+      width: 100vw;
+      
+    }
+    
+    .Concierge-content {
+      width: 100vw;
+      height:40vh;
+      margin: 0;
+      border:3px solid goldenrod;
+    } 
+ 
+    .Concierge-content h1,
+    p {
+      padding: 0;
+      /* margin-bottom: 3rem; */
+      text-align: left;
+    }
+
+  }
+
+  .trial-section {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 25%;
+    width: 100vw;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  .start-trial-section,
+  .request-demo-section {
+    width: 22rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .trial-section h1 {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .trial-section p {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  
+  .trial-section button {
+    background-color: blue;
+
+.trial-section h1 {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.trial-section p {
+  text-align: left;
+  margin-bottom: 8rem;
+}
+
+
+  }
+  /* .start-trial-section,
+.request-demo-section {
+  width: 22rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 2rem;
+}
+   */
+   .trial-section button {
+    background-color: blue;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    color: white;
+  }
+  
 }
