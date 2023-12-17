@@ -30,15 +30,15 @@ function App() {
         <Support></Support>
         <Trail />
         <Footer />
-        
+
       </>
     );
   }
   return (
-    <div className="App"> 
+    <div className="App">
       <Routes>
-         <Route path="/" element={<HomeLayout/>}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={<HomeLayout />} />
+        <Route path="/login" element={<Login />} />
         {/* <Route path="/newpage" element={<Newpage/>}/> */}
       </Routes>
     </div>

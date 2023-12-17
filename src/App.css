@@ -505,6 +505,7 @@ p {
 .start-trial-section,
 .request-demo-section {
   width: 22rem;
+  border:1px dashed gold;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -527,6 +528,7 @@ p {
   background-color: blue;
   padding: 0.5rem 4.5rem;
   border: 1px solid white;
+  border: 1px solid goldenrod;
   color: white;
 }
 
@@ -654,31 +656,25 @@ p {
   }
 }
 
-
-
-
-
-
+/* np */
 
 
 @media (max-width: 665px) {
   
   .main-div{
     width: 100vw;
-    font-size: smaller;
-    /* position: relative; */
-    /* top:10; */
     display: flex;
     flex-direction: column;
     h1{
       width:90vw;
-      font-size:1.5rem;
+      font-size:2rem;
       order:0;
       line-height: 1.5;
     }
     p{
       width:90vw;
-      font-size:1rem;
+      font-size:1.2rem;
+      line-height: 1.5;
        order:2; 
     }
     img{
@@ -688,9 +684,7 @@ p {
       height: 85%;
     }
     button{
-
       order: 3;
-
     }
   }
 
@@ -699,15 +693,16 @@ p {
   display: none;
 }
   .content-section {
-    font-size: large;
     border:2px solid orange;
     h1{
-      font-size: large;
+     font-size: 1.5rem;
+     line-height: 1.5;
     }
   p {
     width: 80%;
     text-align: left;
-    font-size: 1rem;
+    font-size:1.2rem;
+    line-height: 1.5;
     
   }
 }
@@ -715,26 +710,41 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    font-size:1.2rem;
+    line-height: 1.5;
+    border:3px dashed black;
+    margin:3%;
   }
-  
-  /* .overlay-items {
-    background-color: gray;
-    display: flex;
-  } */
-  
+    
   .page {
     display: flex;
+    border:3px solid darkmagenta;
     flex-direction: column;
     text-align: left;
+    font-size:1.2rem;
+    line-height: 1.5;
   }
 
   .integrate-section {
-    border:2px solid blue;
+    margin-top: 810px;
+    background-color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
     background-color: rgba(245, 245, 220, 0.458);
     /* padding: 1% 4%; */
     h1{
       font-size: 1.5rem;
-      font-weight: 410;
+      font-weight: bold;
+      border: 1px double hotpink;
+      /* font-size:1.5rem; */
+      line-height: 1.5;
+    }
+
+    
+    p{
+      border:1px double palegreen;
+      font-size: 1.2rem;
       line-height: 1.5;
     }
   }
@@ -752,29 +762,24 @@ p {
   }
   
   .feedback-section h1 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight:600;
     line-height: 1.2;
   }
   
   .feedback-section>p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
   
   .marketing-section {
     width: 90vw;
-    /* margin: auto; */
     display: flex;
     flex-direction: column;
   }
   
   .marketing-team {
-    /* display: flex;
-    flex-direction: row; */
     border:6px solid red;
-    width: 90vw;
-    /* margin: auto; */
-  
+    width: 90vw;  
     border: 1px double black;
     text-align: left;
     justify-content: center;
@@ -810,14 +815,6 @@ p {
       }
 
     }
-    /* h1{
-      font-size: 2rem;
-      font-weight: 600;
-    color: rgba(0, 0, 0, 0.6);
-    } */
-    /* p{
-      font-size: 1rem;
-    } */
   }
 
   
@@ -907,21 +904,8 @@ p {
   text-align: left;
   margin-bottom: 8rem;
 }
-
-
   }
-  /* .start-trial-section,
-.request-demo-section {
-  width: 22rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 0;
-  padding-left: 0;
-  font-size: 2rem;
-}
-   */
+
    .trial-section button {
     background-color: blue;
     padding: 0.5rem;
